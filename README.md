@@ -1,156 +1,254 @@
 🧠 Digital Wellbeing & Cognitive Fatigue Tracker
 
-Digital Wellbeing & Cognitive Fatigue Tracker is a machine learning–based data science project designed to analyze how daily smartphone usage impacts mental fatigue, stress, focus, sleep quality, and overall digital wellbeing among students and young adults.
+A comprehensive machine learning–powered Streamlit dashboard for analyzing digital behavior, cognitive fatigue, stress levels, focus, and overall digital wellbeing among students and young adults.
 
-The project leverages survey-based behavioral data and applies multiple machine learning algorithms to uncover patterns, make predictions, and classify user wellbeing states.
+This project applies regression, classification, and clustering algorithms on real-world survey data to uncover usage patterns and predict mental fatigue caused by smartphone overuse.
 
-✨ Project Highlights
+🌟 Features
 
-📊 Analyzes real-world digital behavior using survey data
+📊 Fatigue Prediction using regression models
+🎯 Wellbeing Classification with confusion matrix evaluation
+🔍 Behavior Clustering to identify digital usage patterns
+🧠 Multi-Model ML Analysis (Regression, Classification, Clustering)
+🌐 Interactive Streamlit Dashboard for real-time insights
+📱 Responsive UI – works on desktop & mobile
+📈 Visual Analytics with charts and graphs
 
-🧠 Predicts cognitive fatigue and stress levels
+🛠️ Technologies Used
+🧠 Machine Learning & Data Science
 
-📱 Studies the impact of screen time and social media usage
+Python
 
-🔍 Identifies digital usage patterns through clustering
+scikit-learn – ML algorithms
 
-🎓 Built as an academic Machine Learning / Data Science project
+pandas – Data processing
 
-📌 Problem Statement
+NumPy – Numerical computation
 
-With increasing smartphone dependency, users—especially students—experience reduced focus, increased stress, and cognitive fatigue.
-This project aims to quantify and analyze these effects using machine learning models to better understand digital wellbeing.
+Matplotlib & Seaborn – Visualization
 
-🎯 Objectives
+🌐 Frontend / Dashboard
 
-Analyze smartphone usage patterns and their psychological impact
+Streamlit – Interactive web application
 
-Predict cognitive fatigue levels
+Plotly – Dynamic visualizations
 
-Classify user wellbeing and stress states
+📄 Data Collection
 
-Identify distinct user behavior groups
+Google Forms – Anonymous survey data
 
-Support awareness of healthy digital habits
+📋 Prerequisites
 
-📂 Dataset Overview
+Python 3.8 or higher
 
-Data Source: Google Form (Anonymous Survey)
+pip package manager
 
-Total Records: 525
+Internet connection (for Streamlit hosting)
 
-Total Features: 17
+Modern web browser
 
-Key Features Include:
+🚀 Quick Start
+Method 1: Automated Setup (Recommended)
+# Clone the repository
+git clone https://github.com/yourusername/Digital-Wellbeing-Cognitive-Fatigue-Tracker.git
+cd Digital-Wellbeing-Cognitive-Fatigue-Tracker
 
-Daily screen time
+# Install dependencies
+pip install -r requirements.txt
+
+# Run the Streamlit app
+streamlit run app.py
+
+Method 2: Manual Setup
+# 1. Install dependencies
+pip install -r requirements.txt
+
+# 2. Run the Streamlit dashboard
+streamlit run app.py
+
+
+The app will open automatically at:
+👉 http://localhost:8501
+
+📁 Project Structure
+Digital_Wellbeing_Tracker/
+├── app.py                     # Main Streamlit application
+├── data/
+│   └── dataset.csv            # Survey dataset (525 × 17)
+├── models/
+│   ├── linear_regression.py   # Fatigue prediction
+│   ├── logistic_regression.py # Classification model
+│   ├── svm_model.py           # Support Vector Machine
+│   ├── knn_model.py           # KNN classification
+│   └── clustering.py          # K-Means clustering
+├── utils/
+│   ├── preprocessing.py       # Data cleaning & encoding
+│   └── visualization.py       # Charts & plots
+├── requirements.txt           # Python dependencies
+└── README.md                  # Project documentation
+
+🎯 Usage Guide
+Running the Dashboard
+
+Launch the Streamlit app using streamlit run app.py
+
+Upload or load the survey dataset
+
+Explore interactive ML results and visualizations
+
+Dashboard Functionalities
+
+📈 Predict Cognitive Fatigue
+
+🎯 Classify Stress & Wellbeing Levels
+
+📊 View Confusion Matrix
+
+🧩 Analyze User Behavior Clusters
+
+📉 Explore Screen Time & Focus Trends
+
+🤖 Machine Learning Models
+1️⃣ Linear Regression
+
+Purpose:
+Predict cognitive fatigue score based on screen usage patterns
+
+Metrics:
+
+R² Score
+
+Mean Squared Error
+
+2️⃣ Logistic Regression
+
+Purpose:
+Classify users into low/high fatigue or stress levels
+
+Metrics:
+
+Accuracy
+
+Precision
+
+Recall
+
+Confusion Matrix
+
+3️⃣ Support Vector Machine (SVM)
+
+Purpose:
+Separate users based on wellbeing and focus patterns
+
+Metrics:
+
+Accuracy
+
+Classification Report
+
+4️⃣ K-Nearest Neighbors (KNN)
+
+Purpose:
+Identify similar users based on digital behavior
+
+5️⃣ K-Means Clustering
+
+Purpose:
+Discover hidden digital usage patterns and behavior groups
+
+Visualization:
+
+Cluster plots
+
+Elbow method
+
+📊 Data Features
+
+The dataset includes:
+
+Total daily screen time
 
 Social media usage duration
 
 Phone unlock frequency
 
-Mental fatigue level (1–5 scale)
+Mental fatigue level (1–5)
 
-Sleep quality & focus level
+Sleep quality rating
 
-Stress and productivity indicators
+Focus level during work/study
+
+Stress & productivity indicators
 
 Cognitive fatigue management strategies
 
-🤖 Machine Learning Models Used
+🔧 Configuration
+Modify Features or Models
 
-Linear Regression
+You can adjust model parameters in the models/ directory:
 
-Predicts cognitive fatigue score
+# Example: Change K-Means clusters
+KMeans(n_clusters=4, random_state=42)
 
-Logistic Regression
+🔍 Troubleshooting
+Common Issues
 
-Classifies fatigue/stress levels
+Streamlit app not opening
 
-Evaluated using a Confusion Matrix
+Ensure Streamlit is installed
 
-Support Vector Machine (SVM)
+Run: pip install streamlit
 
-Separates users based on wellbeing patterns
+Dataset not loading
 
-K-Nearest Neighbors (KNN)
+Check file path in app.py
 
-Groups users based on behavioral similarity
+Ensure dataset.csv exists
 
-K-Means Clustering
+Model errors
 
-Identifies distinct digital behavior clusters
+Verify all dependencies are installed
 
-📈 Key Insights
+Check data preprocessing steps
 
-Higher screen time is strongly correlated with increased mental fatigue
+🔮 Future Enhancements
 
-Frequent phone unlocking indicates lower focus levels
+✅ Real-time smartphone usage integration
+✅ Wearable device data support
+✅ Deep learning models (LSTM)
+✅ Personalized wellbeing recommendations
+✅ Mobile app integration
+✅ Cloud deployment
 
-Poor sleep quality contributes to higher stress
+🤝 Contributing
 
-Users practicing mindfulness or physical activity show better wellbeing
+Fork the repository
 
-Clustering reveals clear behavioral groups among users
+Create a new branch (git checkout -b feature-name)
 
-🚀 Tech Stack
+Commit your changes
 
-Python
+Push to your branch
 
-Pandas & NumPy – Data processing
+Open a pull request
 
-Matplotlib & Seaborn – Visualization
+📝 License
 
-Scikit-learn – Machine learning models
-
-Google Forms – Data collection
-
-🛠️ Setup Instructions
-
-No complex setup required.
-
-# Clone the repository
-git clone https://github.com/yourusername/Digital-Wellbeing-Cognitive-Fatigue-Tracker.git
-
-# Navigate to the project folder
-cd Digital-Wellbeing-Cognitive-Fatigue-Tracker
-
-# Run the notebook or Python scripts
-
-📌 Applications
-Student mental health awareness
-
-Digital wellbeing tracking systems
-
-Productivity improvement tools
-
-Early detection of cognitive fatigue
-
-Educational and research use
-
-🔮 Future Scope
-Real-time smartphone usage integration
-
-Wearable device data support
-
-Deep learning–based predictions
-
-Personalized digital wellbeing recommendations
-
-Mobile or web-based dashboard
+This project is open source and available under the MIT License.
 
 👨‍💻 Author
+
 Prince Verma
-Data Science & Machine Learning Enthusiast
+Machine Learning & Data Science Enthusiast
 
-⭐ Feedback & Contributions
-If you find this project useful:
+📩 Support
 
-⭐ Star the repository
+If you face any issues:
 
-🐛 Open issues for suggestions or improvements
+Check the troubleshooting section
 
-🔧 Submit pull requests
+Verify dependencies
 
-Feedback is always welcome!
+Review Streamlit logs
 
+Happy learning & building healthy digital habits 🧠📱✨
