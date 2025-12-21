@@ -78,7 +78,6 @@ streamlit run app.py
 '''
 
 📁 Project Structure
-'''
 Digital_Wellbeing_Tracker/
 ├── app.py                     # Main Streamlit application
 ├── data/
@@ -94,7 +93,7 @@ Digital_Wellbeing_Tracker/
 │   └── visualization.py
 ├── requirements.txt
 └── README.md
-'''
+
 🎯 Usage Guide
 streamlit run app.py
 
