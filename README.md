@@ -182,7 +182,8 @@ MIT License
 Prince Verma
 Machine Learning & Data Science
 
-📩 Feedback & Contributions
+📩 Feedback & Contribution
+
 ⭐ Star the repository
 🐛 Open issues
 🔧 Create pull requests
