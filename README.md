@@ -1,4 +1,156 @@
-🧠 Digital Wellbeing & Cognitive Fatigue TrackerAdvanced Predictive Modeling Platform for Human-Computer Interaction (HCI) Analysis📌 Project OverviewThe Digital Wellbeing Tracker is a data-driven solution designed to analyze the impact of modern digital habits on human cognitive health. By leveraging a primary dataset of 525 samples, the system identifies patterns between screen time, stress, and sleep to predict Cognitive Fatigue levels.The application features a professional, dark-themed Earnomly Dashboard that bridges the gap between complex machine learning theory and actionable user insights.📊 Exploratory Data Analysis (EDA)Before training, the data undergoes rigorous statistical analysis to ensure model reliability:Correlation Heatmaps: Quantifying the relationship between features (e.g., Stress Level vs. Fatigue Score).Multi-variate Scatter Analysis: Identifying "Danger Zones" where high screen time and low sleep quality intersect.Outlier Detection: Utilizing Box Plots to identify extreme usage behaviors that could skew model weights.Data Density: Implementing Violin Plots to visualize the probability distribution of fatigue across various stress tiers.🧠 Machine Learning ArchitectureThis project implements 5 Supervised Models and Unsupervised Clustering to provide a 360-degree view of the data.1. Supervised Learning (Classification & Regression)ModelPurposeKey MetricsLinear RegressionPredicts continuous Fatigue Scores (1-5).MAE, MSE, RMSE, $R^2$ ScoreLogistic RegressionClassifies state as 'High Risk' or 'Healthy'.Confusion Matrix, PrecisionKNNHyperparameter tuned for optimal $k$ ($3, 5, 7, 9, 11$).Accuracy Table, Accuracy CurveSVMLinear separation of user states in 2D space.PCA Decision BoundaryDecision TreeInterpretable rule-based classification logic.Tree Flowchart Visualization2. Unsupervised Learning (Pattern Detection)K-Means Clustering: Groups users into "Personas" (e.g., The Social Media Heavy User vs. The Balanced Professional).PCA (Principal Component Analysis): Reduces 5D habit data into 2D space for intuitive visualization of user clusters.🚀 Live Fatigue PredictorThe dashboard includes a real-time inference engine. Users can adjust sliders for:Screen Time (Hrs)Social Media Usage (Hrs)Sleep Quality (1-5)Stress Level (1-5)Focus Level (1-5)The system calculates a Fatigue Risk Percentage using the optimized KNN model stored in the application session state.🛠️ Installation & SetupClone the Repo:Bashgit clone https://github.com/your-username/digital-wellbeing-tracker.git
-Install Dependencies:Bashpip install streamlit pandas numpy matplotlib seaborn scikit-learn statsmodels
-Launch Dashboard:Bashstreamlit run app.py
-🎯 ConclusionThis project demonstrates a full-stack ML pipeline: from raw data cleaning and advanced EDA to model optimization and deployment. It proves that digital habits are quantifiable predictors of mental fatigue and provides a tool for users to optimize their digital lives.
+🧠 Digital Wellbeing & Cognitive Fatigue Tracker
+
+Digital Wellbeing & Cognitive Fatigue Tracker is a machine learning–based data science project designed to analyze how daily smartphone usage impacts mental fatigue, stress, focus, sleep quality, and overall digital wellbeing among students and young adults.
+
+The project leverages survey-based behavioral data and applies multiple machine learning algorithms to uncover patterns, make predictions, and classify user wellbeing states.
+
+✨ Project Highlights
+
+📊 Analyzes real-world digital behavior using survey data
+
+🧠 Predicts cognitive fatigue and stress levels
+
+📱 Studies the impact of screen time and social media usage
+
+🔍 Identifies digital usage patterns through clustering
+
+🎓 Built as an academic Machine Learning / Data Science project
+
+📌 Problem Statement
+
+With increasing smartphone dependency, users—especially students—experience reduced focus, increased stress, and cognitive fatigue.
+This project aims to quantify and analyze these effects using machine learning models to better understand digital wellbeing.
+
+🎯 Objectives
+
+Analyze smartphone usage patterns and their psychological impact
+
+Predict cognitive fatigue levels
+
+Classify user wellbeing and stress states
+
+Identify distinct user behavior groups
+
+Support awareness of healthy digital habits
+
+📂 Dataset Overview
+
+Data Source: Google Form (Anonymous Survey)
+
+Total Records: 525
+
+Total Features: 17
+
+Key Features Include:
+
+Daily screen time
+
+Social media usage duration
+
+Phone unlock frequency
+
+Mental fatigue level (1–5 scale)
+
+Sleep quality & focus level
+
+Stress and productivity indicators
+
+Cognitive fatigue management strategies
+
+🤖 Machine Learning Models Used
+
+Linear Regression
+
+Predicts cognitive fatigue score
+
+Logistic Regression
+
+Classifies fatigue/stress levels
+
+Evaluated using a Confusion Matrix
+
+Support Vector Machine (SVM)
+
+Separates users based on wellbeing patterns
+
+K-Nearest Neighbors (KNN)
+
+Groups users based on behavioral similarity
+
+K-Means Clustering
+
+Identifies distinct digital behavior clusters
+
+📈 Key Insights
+
+Higher screen time is strongly correlated with increased mental fatigue
+
+Frequent phone unlocking indicates lower focus levels
+
+Poor sleep quality contributes to higher stress
+
+Users practicing mindfulness or physical activity show better wellbeing
+
+Clustering reveals clear behavioral groups among users
+
+🚀 Tech Stack
+
+Python
+
+Pandas & NumPy – Data processing
+
+Matplotlib & Seaborn – Visualization
+
+Scikit-learn – Machine learning models
+
+Google Forms – Data collection
+
+🛠️ Setup Instructions
+
+No complex setup required.
+
+# Clone the repository
+git clone https://github.com/yourusername/Digital-Wellbeing-Cognitive-Fatigue-Tracker.git
+
+# Navigate to the project folder
+cd Digital-Wellbeing-Cognitive-Fatigue-Tracker
+
+# Run the notebook or Python scripts
+
+📌 Applications
+Student mental health awareness
+
+Digital wellbeing tracking systems
+
+Productivity improvement tools
+
+Early detection of cognitive fatigue
+
+Educational and research use
+
+🔮 Future Scope
+Real-time smartphone usage integration
+
+Wearable device data support
+
+Deep learning–based predictions
+
+Personalized digital wellbeing recommendations
+
+Mobile or web-based dashboard
+
+👨‍💻 Author
+Prince Verma
+Data Science & Machine Learning Enthusiast
+
+⭐ Feedback & Contributions
+If you find this project useful:
+
+⭐ Star the repository
+
+🐛 Open issues for suggestions or improvements
+
+🔧 Submit pull requests
+
+Feedback is always welcome!
+
