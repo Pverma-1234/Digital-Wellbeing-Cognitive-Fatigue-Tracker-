@@ -52,18 +52,18 @@ pip package manager
 Modern web browser
 
 🚀 Method 1: Quick Start
-'''
+```
 git clone https://github.com/yourusername/Digital-Wellbeing-Cognitive-Fatigue-Tracker.git
 cd Digital-Wellbeing-Cognitive-Fatigue-Tracker
 pip install -r requirements.txt
 streamlit run app.py
-'''
+```
 
 The app will open automatically at:
-'''http://localhost:8501'''
+```http://localhost:8501```
 
 🔧 Method 2: Manual Setup
-'''
+```
 # 1. Install dependencies
 pip install -r requirements.txt
 
@@ -75,9 +75,10 @@ streamlit run app.py
 
 # 4. Open the application in your browser
 # http://localhost:8501
-'''
+```
 
 📁 Project Structure
+```
 Digital_Wellbeing_Tracker/
 ├── app.py                     # Main Streamlit application
 ├── data/
@@ -93,9 +94,9 @@ Digital_Wellbeing_Tracker/
 │   └── visualization.py
 ├── requirements.txt
 └── README.md
-
+```
 🎯 Usage Guide
-streamlit run app.py
+```streamlit run app.py```
 
 
 View dataset insights
@@ -107,26 +108,26 @@ Analyze predictions
 Explore behavior clusters
 
 🤖 Machine Learning Models
-Linear Regression
+1.Linear Regression
 
-Predicts cognitive fatigue score
+2.Predicts cognitive fatigue score
 
-Logistic Regression
+3.Logistic Regression
 
-Classifies stress / fatigue level
+4.Classifies stress / fatigue level
 Includes confusion matrix
 
-Support Vector Machine (SVM)
+5.Support Vector Machine (SVM)
 
-Wellbeing state classification
+6.Wellbeing state classification
 
-K-Nearest Neighbors (KNN)
+7.K-Nearest Neighbors (KNN)
 
-Finds similar users based on digital behavior
+8.Finds similar users based on digital behavior
 
-K-Means Clustering
+9.K-Means Clustering
 
-Identifies digital behavior groups
+10.Identifies digital behavior groups
 
 📊 Dataset Information
 
@@ -151,7 +152,7 @@ Sleep quality
 Focus & stress indicators
 
 🔍 Troubleshooting
-pip install streamlit
+```pip install streamlit```
 
 
 Ensure dataset path is correct
