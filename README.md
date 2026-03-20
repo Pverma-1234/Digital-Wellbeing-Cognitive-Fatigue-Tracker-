@@ -120,17 +120,18 @@ Digital_Wellbeing_Tracker/
 
 | Model                  | Accuracy | Rank |
 |----------------------|----------|------|
-| KNN                  | 0.9400   | 🥇 1 |
+| Logistic Regression  | 0.9400   | 🥇 1 |
 | SVM                  | 0.9300   | 🥈 2 |
-| Logistic Regression  | 0.9100   | 🥉 3 |
-| Decision Tree        | 0.8800   |  4  |
+| KNN                  | 0.9100   | 🥉 3 |
+| Random Forest        | 0.8800   |  4  |
+| Decision Tree        | 0.7429   |  5  |
 
 ---
 
 ## 📊 Dataset Information
 
 - Source: Google Forms  
-- Records: 525  
+- Records: 520+  
 - Features: 17  
 
 Includes:
