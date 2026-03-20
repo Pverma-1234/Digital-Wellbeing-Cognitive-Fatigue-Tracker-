@@ -1,57 +1,59 @@
-🧠 Digital Wellbeing & Cognitive Fatigue Tracker
+# 🧠 Digital Wellbeing & Cognitive Fatigue Tracker
 
-A machine learning–based Streamlit application that analyzes smartphone usage patterns and their impact on digital wellbeing, cognitive fatigue, stress, focus, and sleep quality among students and young adults.
+A **machine learning–based Streamlit application** that analyzes smartphone usage patterns and their impact on **digital wellbeing, cognitive fatigue, stress, focus, and sleep quality** among students and young adults.
 
-The project uses survey data (525 responses, 17 features) and applies multiple machine learning models to generate insights, predictions, and behavior clusters.
+The project leverages **survey data (525 responses, 17 features)** and applies multiple ML models to generate **predictions, insights, and behavioral clusters**.
 
-🌟 Features
+---
 
-📊 Predict cognitive fatigue levels
+## 🌟 Features
 
-🎯 Classify stress & wellbeing states (Confusion Matrix)
+- 📊 Predict cognitive fatigue levels  
+- 🎯 Classify stress & wellbeing states (with confusion matrix)  
+- 🧩 Identify digital behavior patterns using clustering  
+- 📈 Interactive visualizations  
+- 🌐 Streamlit-based web dashboard  
+- 📱 Fully responsive UI (desktop & mobile)  
 
-🧩 Identify digital behavior patterns using clustering
+---
 
-📈 Interactive visualizations
+## 🛠️ Tech Stack
 
-🌐 Streamlit-based web dashboard
+### 🔹 Machine Learning & Data
+- Python  
+- scikit-learn  
+- pandas  
+- NumPy  
+- Matplotlib  
+- Seaborn  
 
-📱 Responsive UI (desktop & mobile)
+### 🔹 Dashboard
+- Streamlit  
+- Plotly  
 
-🛠️ Tech Stack
-Machine Learning & Data
+### 🔹 Data Collection
+- Google Forms (Anonymous Survey)
 
-Python
+---
 
-scikit-learn
+## 📦 Dependencies
 
+```
+streamlit
 pandas
+numpy
+scikit-learn
+matplotlib
+seaborn
+plotly
+```
 
-NumPy
+---
 
-Matplotlib
+## 🚀 Installation & Setup
 
-Seaborn
+### Method 1: Quick Start
 
-Dashboard
-
-Streamlit
-
-Plotly
-
-Data Collection
-
-Google Forms (Anonymous Survey)
-
-📋 Prerequisites
-
-Python 3.8 or higher
-
-pip package manager
-
-Modern web browser
-
-🚀 Method 1: Quick Start
 ```
 git clone https://github.com/yourusername/Digital-Wellbeing-Cognitive-Fatigue-Tracker.git
 cd Digital-Wellbeing-Cognitive-Fatigue-Tracker
@@ -59,134 +61,135 @@ pip install -r requirements.txt
 streamlit run app.py
 ```
 
-The app will open automatically at:
-```http://localhost:8501```
-
-🔧 Method 2: Manual Setup
+Open in browser:
 ```
-# 1. Install dependencies
+http://localhost:8501
+```
+
+---
+
+### Method 2: Manual Setup
+
+```
 pip install -r requirements.txt
-
-# 2. Load / prepare dataset
-# Ensure dataset.csv is present inside the data/ directory
-
-# 3. Start the Streamlit application
 streamlit run app.py
-
-# 4. Open the application in your browser
-# http://localhost:8501
 ```
 
-📁 Project Structure
+---
+
+## 📁 Project Structure
+
 ```
 Digital_Wellbeing_Tracker/
-├── app.py                     # Main Streamlit application
-├── data/
-│   └── dataset.csv            # Survey dataset (525 × 17)
-├── models/
+│── app.py
+│── data/
+│   └── dataset.csv
+│── models/
 │   ├── linear_regression.py
 │   ├── logistic_regression.py
 │   ├── svm_model.py
 │   ├── knn_model.py
+│   ├── decision_tree.py
 │   └── clustering.py
-├── utils/
+│── utils/
 │   ├── preprocessing.py
 │   └── visualization.py
-├── requirements.txt
-└── README.md
+│── requirements.txt
+│── README.md
 ```
-🎯 Usage Guide
-```streamlit run app.py```
 
+---
 
-View dataset insights
+## 🤖 Machine Learning Models
 
-Run ML models
+### 🔹 Regression
+- Linear Regression → Predicts cognitive fatigue score  
 
-Analyze predictions
+### 🔹 Classification
+- KNN → Finds similar behavior patterns  
+- SVM → Wellbeing classification  
+- Logistic Regression → Stress/fatigue classification  
+- Decision Tree → Rule-based classification  
 
-Explore behavior clusters
+### 🔹 Clustering
+- K-Means Clustering → Identifies digital behavior groups  
 
-🤖 Machine Learning Models
-1.Linear Regression
+---
 
-2.Predicts cognitive fatigue score
+## 📊 Model Performance
 
-3.Logistic Regression
+| Model                  | Accuracy | Rank |
+|----------------------|----------|------|
+| KNN                  | 0.9400   | 🥇 1 |
+| SVM                  | 0.9300   | 🥈 2 |
+| Logistic Regression  | 0.9100   | 🥉 3 |
+| Decision Tree        | 0.8800   |  4  |
 
-4.Classifies stress / fatigue level
-Includes confusion matrix
+---
 
-5.Support Vector Machine (SVM)
+## 📊 Dataset Information
 
-6.Wellbeing state classification
-
-7.K-Nearest Neighbors (KNN)
-
-8.Finds similar users based on digital behavior
-
-9.K-Means Clustering
-
-10.Identifies digital behavior groups
-
-📊 Dataset Information
-
-Source: Google Forms
-
-Records: 525
-
-Features: 17
+- Source: Google Forms  
+- Records: 525  
+- Features: 17  
 
 Includes:
+- Screen time  
+- Social media usage  
+- Phone unlock frequency  
+- Mental fatigue (1–5 scale)  
+- Sleep quality  
+- Focus & stress indicators  
 
-Screen time
+---
 
-Social media usage
+## 🎯 Usage Guide
 
-Phone unlock frequency
+```
+streamlit run app.py
+```
 
-Mental fatigue (1–5 scale)
+---
 
-Sleep quality
+## 🔍 Troubleshooting
 
-Focus & stress indicators
+```
+pip install streamlit
+```
 
-🔍 Troubleshooting
-```pip install streamlit```
+- Ensure dataset path is correct  
+- Verify dependencies installation  
+- Restart Streamlit server  
 
+---
 
-Ensure dataset path is correct
+## 🔮 Future Scope
 
-Verify dependencies installation
+- Real-time smartphone usage tracking  
+- Wearable device integration  
+- Deep learning models (LSTM)  
+- Personalized wellbeing recommendations  
+- Cloud deployment  
 
-Restart Streamlit server
+---
 
-🔮 Future Scope
+## 📝 License
 
-Real-time smartphone usage tracking
+MIT License  
 
-Wearable device integration
+---
 
-Deep learning models (LSTM)
+## 👨‍💻 Author
 
-Personalized wellbeing recommendations
+Prince Verma  
+Machine Learning & Data Science  
 
-Cloud deployment
+---
 
-📝 License
+## 📩 Feedback & Contribution
 
-MIT License
-
-👨‍💻 Author
-
-Prince Verma
-Machine Learning & Data Science
-
-📩 Feedback & Contribution
-
-⭐ Star the repository
-🐛 Open issues
-🔧 Create pull requests
-
+- ⭐ Star the repository  
+- 🐛 Open issues  
+- 🔧 Create pull requests  
 
 Feedback is always welcome 🙌
