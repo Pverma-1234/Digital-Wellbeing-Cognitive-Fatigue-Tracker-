@@ -1,6 +1,5 @@
 # 🧠 Digital Wellbeing & Cognitive Fatigue Tracker
-## 🚀 Live Demo  
-👉 https://fatiguetracker01pv.streamlit.app/
+## 🚀 Live Demo  👉 https://fatiguetracker01pv.streamlit.app/
 
 ## 📌 About Project
 A **machine learning–based Streamlit application** that analyzes smartphone usage patterns and their impact on **digital wellbeing, cognitive fatigue, stress, focus, and sleep quality** among students and young adults.
